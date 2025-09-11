@@ -13,6 +13,6 @@ def create_app():
     migrate.init_app(app,db)
 
     #register blueprint
-    app.register_blueprint(student_bp)
+    app.register_blueprint(student_bp,url_prefix="/student")
 
     return app
